@@ -30,7 +30,7 @@ jobs:
         run: dotnet build MyAPI.sln --configuration Release --no-restore
 
       - name: dotnet publish
-        run: dotnet publish MyAPI/MyAPI.cproj -c Release -o ./myapp"
+        run: dotnet publish UserHandlerAPI/MyAPI.csproj -c Release -o ./myapp
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
